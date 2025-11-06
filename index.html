@@ -1,30 +1,111 @@
-<!DOCTYPE html> <html lang="tr"> <head> <meta charset="UTF-8"> <meta 
-name="viewport" content="width=device-width, initial-scale=1.0"> <title>Yücel 
-Kimya</title> <style> body { margin:0; font-family: Arial, sans-serif; } header 
-{ background:#f8f8f8; padding:10px 0; text-align:center; } nav { 
-background:#333; overflow:hidden; } nav a { float:left; color:#fff; padding:12px
- 16px; text-decoration:none; font-size:14px; } nav a:hover { background:#ddd; 
-color:#000; } .hero { background:#e6e6e6; text-align:center; padding:60px 20px; 
-} .hero h1 { margin-bottom:10px; font-size:32px; } .hero p { margin-bottom:20px;
- font-size:18px; } .hero a { display:inline-block; background:#d92332; 
-color:#fff; padding:12px 24px; text-decoration:none; border-radius:4px; } 
-.section { padding:40px 20px; border-bottom:1px solid #eee; } .section img { 
-max-width:150px; margin-bottom:10px; } /* Yeni grid düzeni */ .brands { display:
- grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; 
-padding: 40px 20px; } .brand { text-align: center; border: 1px solid #eee; 
-border-radius: 8px; padding: 20px; background: #fff; box-shadow: 0 2px 4px 
-rgba(0,0,0,0.05); transition: transform 0.2s; } .brand:hover { transform: 
-translateY(-4px); } .brand img { max-width:150px; margin-bottom:10px; } footer {
- text-align:center; padding:20px; background:#f0f0f0; font-size:12px; } </style>
- </head> <body> <header> <h1>Yücel Kimya</h1> </header> <nav> <a 
-href="#mly">MLY</a> <a href="#trilons">Trilons</a> <a href="#ece">Ece</a> <a 
-href="#trion">Trion</a> <a href="#satex">Satex</a> <a href="#nagi">Nagi</a> <a 
-href="#eco">Eco</a> </nav> <section class="hero"> <h1>Sorunsuz Kalite, İyi Hizmet ve Müşteri Memnuniyeti</h1> <p>Toz deterjan üretiminde ve talepten teslimata kadar toptancılar ve marketler için kaliteli hizmet sunuyor, müşteri memnuniyetini ön planda tutuyoruz.</p> <a href="#contact">Fiyat Teklifi İste</a> </section> <!-- Marka Bölümleri --> <section class="brands"> <div 
-class="brand"> <img src="mily matik.png" alt="MLY Matik 
-Logo"> </div> <div class="brand"> <img src="Trilons matik
- eco.png" alt="Trilons Matik Logo"> </div> <div class="brand"> <img src="Ece Matik.png" alt="Ece Matik Logo"> </div> <div 
-class="brand"> <img src="Nagi matik.png" alt="Nagi Matik 
-Logo"> </div> <div class="brand"> <img src="Eco Plus.png" 
-alt="Eco Plus Logo"> </div> <div class="brand"> <img 
-src="Satex Extra.png" alt="Satex Extra Logo"> </div> </section> <section id="contact" class="section"> <h2>İletişim Bilgileri</h2> <p><strong>Tel:</strong> +90 212 485 70 79<br> <strong>WhatsApp:</strong> +90 541 485 70 79<br> <strong>Email:</strong> <a href="mailto:info@yucelkimya.com.tr">info@yucelkimya.com.tr</a><br> <strong>Adres:</strong> <a href="https://maps.app.goo.gl/E3w4CwTFZRUDXgKE9">Karadenizliler Mh. Barbaros Cd. NO:66 Başiskele / Kocaeli</a></p> </section> <footer> © 2025 Yücel Kimya – Tüm hakları saklıdır. 
-</footer> </body> </html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yüel Kimya</title>
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  display:flex;
+}
+.sidebar {
+  width:200px;
+  background:#333;
+  color:#fff;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  padding-top:60px;
+}
+.sidebar a {
+  display:block;
+  color:#fff;
+  padding:12px 16px;
+  text-decoration:none;
+}
+.sidebar a:hover {
+  background:#ddd;
+  color:#000;
+}
+.main-content {
+  margin-left:200px;
+  width: calc(100% - 200px);
+}
+header { background:#f8f8f8; padding:10px 0; text-align:center; }
+nav { background:#333; overflow:hidden; }
+nav a { float:left; color:#fff; padding:12px 16px; text-decoration:none; font-size:14px; }
+nav a:hover { background:#ddd; color:#000; }
+.hero { background:#e6e6e6; text-align:center; padding:60px 20px; }
+.hero h1 { margin-bottom:10px; font-size:32px; }
+.hero p { margin-bottom:20px; font-size:18px; }
+.hero a { display:inline-block; background:#d92332; color:#fff; padding:12px 24px; text-decoration:none; border-radius:4px; }
+.section { padding:40px 20px; border-bottom:1px solid #eee; }
+.section img { max-width:150px; margin-bottom:10px; }
+.brands { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:40px; padding:40px 20px; }
+.brand { text-align:center; border:1px solid #eee; border-radius:8px; padding:20px; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.05); transition: transform 0.2s; }
+.brand:hover { transform: translateY(-4px); }
+.brand img { max-width:150px; margin-bottom:10px; }
+footer { text-align:center; padding:20px; background:#f0f0f0; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="sidebar">
+<a href="hakkimizda.html">Hakkımızda</a>
+<a href="markalarimiz.html">Markalarımız</a>
+<a href="private-label.html">Private Label</a>
+<a href="iletisim.html">İletişim</a>
+</div>
+<div class="main-content">
+<header>
+<h1>Yüel Kimya</h1>
+</header>
+<nav>
+<a href="#mly">MLY</a>
+<a href="#trilons">Trilons</a>
+<a href="#ece">Ece</a>
+<a href="#trion">Trion</a>
+<a href="#satex">Satex</a>
+<a href="#nagi">Nagi</a>
+<a href="#eco">Eco</a>
+</nav>
+<section class="hero">
+<h1>Sorunsuz Kalite, İyi Hizmet ve Müşteri Memnuniyeti</h1>
+<p>Toz deterjan üretiminde ve talepten teslimata kadar toptancılar ve marketler için kaliteli hizmet sunuyor, müşteri memnuniyetini ön planda tutuyoruz.</p>
+<a href="#contact">Fiyat Teklifi İste</a>
+</section>
+<section class="brands">
+<div class="brand" id="mly">
+<img src="mily matik.png" alt="MLY Matik Logo">
+</div>
+<div class="brand" id="trilons">
+<img src="Trilons matik eco.png" alt="Trilons Matik Logo">
+</div>
+<div class="brand" id="ece">
+<img src="Ece Matik.png" alt="Ece Matik Logo">
+</div>
+<div class="brand" id="nagi">
+<img src="Nagi matik.png" alt="Nagi Matik Logo">
+</div>
+<div class="brand" id="eco">
+<img src="Eco Plus.png" alt="Eco Plus Logo">
+</div>
+<div class="brand" id="satex">
+<img src="Satex Extra.png" alt="Satex Extra Logo">
+</div>
+</section>
+<section id="contact" class="section">
+<h2>İletişim Bilgileri</h2>
+<p><strong>Tel:</strong> +90 212 485 70 79<br>
+<strong>WhatsApp:</strong> +90 541 485 70 79<br>
+<strong>Email:</strong> <a href="mailto:info@yucelkimya.com.tr">info@yucelkimya.com.tr</a><br>
+<strong>Adres:</strong> <a href="https://maps.app.goo.gl/E3w4CwTFZRUDXgKE9">Karadenizliler Mh. Barbaros Cd. NO:66 Başiskele / Kocaeli</a></p>
+</section>
+<footer>
+© 2025 Yüel Kimya – Tüm hakları saklıdır.
+</footer>
+</div>
+</body>
+</html>

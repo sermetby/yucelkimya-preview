@@ -16,6 +16,25 @@ nav a:hover { background:#ddd; color:#000; }
 .hero a { display:inline-block; background:#d92332; color:#fff; padding:12px 24px; text-decoration:none; border-radius:4px; }
 .section { padding:40px 20px; border-bottom:1px solid #eee; }
 .section img { max-width:150px; margin-bottom:10px; }
+  /* Yeni grid düzeni */
+.brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 40px 20px;
+}
+.brand {
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+.brand:hover { transform: translateY(-4px); }
+.brand img { max-width:150px; margin-bottom:10px; }
+
 footer { text-align:center; padding:20px; background:#f0f0f0; font-size:12px; }
 </style>
 </head>
@@ -37,40 +56,34 @@ footer { text-align:center; padding:20px; background:#f0f0f0; font-size:12px; }
   <p>Yücel Kimya olarak toz ve sıvı deterjan üretiminde 30 yılı aşkın deneyimimizle hizmet veriyoruz.</p>
   <a href="#contact">Fiyat Teklifi İste</a>
 </section>
-<section id="mly" class="section">
-  <h2>MLY Matik</h2>
-  <img src="mily matik.png" alt="MLY Matik Logo">
-  <p>MLY Matik ürünlerimiz hakkında bilgileri ve ürün görsellerini burada bulabilirsiniz.</p>
-</section>
-<section id="trilons" class="section">
-  <h2>Trilons Matik</h2>
-  <img src="trilons.png – Trilons Matik.png" alt="Trilons Matik Logo">
-  <p>Trilons Matik ürünlerimiz hakkında bilgileri ve ürün görsellerini burada bulabilirsiniz.</p>
-</section>
-<section id="ece" class="section">
-  <h2>Ece Matik</h2>
-  <img src="Ece Matik.png" alt="Ece Matik Logo">
-  <p>Ece Matik ürünlerimiz hakkında bilgileri ve ürün görsellerini burada bulabilirsiniz.</p>
-</section>
-<section id="trion" class="section">
-  <h2>Trion Ultra Matik</h2>
-  <img src="Trilons matik eco.png" alt="Trion Ultra Matik Logo">
-  <p>Trion Ultra Matik ürünlerimiz hakkında bilgileri ve ürün görsellerini burada bulabilirsiniz.</p>
-</section>
-<section id="satex" class="section">
-  <h2>Satex Extra</h2>
-  <img src="Satex Extra.png" alt="Satex Extra Logo">
-  <p>Satex Extra ürünlerimiz hakkında bilgileri ve ürün görsellerini burada bulabilirsiniz.</p>
-</section>
-<section id="nagi" class="section">
-  <h2>Nagi Matik</h2>
-  <img src="Nagi matik.png" alt="Nagi Matik Logo">
-  <p>Nagi Matik ürünlerimiz hakkında bilgileri ve ürün görsellerini burada bulabilirsiniz.</p>
-</section>
-<section id="eco" class="section">
-  <h2>Eco Plus</h2>
-  <img src="Eco Plus.png" alt="Eco Plus Logo">
-  <p>Eco Plus ürünlerimiz hakkında bilgileri ve ürün görsellerini burada bulabilirsiniz.</p>
+<!-- Marka Bölümleri -->
+<section class="brands">
+  <div class="brand">
+    <h2>MLY Matik</h2>
+    <img src="mily matik.png" alt="MLY Matik Logo">
+  </div>
+  <div class="brand">
+    <h2>Trilons Matik</h2>
+    <img src="Trilons matik eco.png" alt="Trilons Matik Logo">
+  </div>
+
+  <div class="brand">
+    <h2>Ece Matik</h2>
+    <img src="Ece Matik.png" alt="Ece Matik Logo">
+  </div>
+  <div class="brand">
+    <h2>Nagi Matik</h2>
+    <img src="Nagi matik.png" alt="Nagi Matik Logo">
+  </div>
+
+  <div class="brand">
+    <h2>Eco Plus</h2>
+    <img src="Eco Plus.png" alt="Eco Plus Logo">
+  </div>
+  <div class="brand">
+    <h2>Satex Extra</h2>
+    <img src="Satex Extra.png" alt="Satex Extra Logo">
+  </div>
 </section>
 <section id="contact" class="section">
   <h2>Bizimle İletişime Geçin</h2>
